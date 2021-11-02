@@ -19,7 +19,7 @@
     width: 1200px;
     margin: 0 auto;
 }
-
+/* header */
 header {
     height: 100px;
     background-color: white;
@@ -28,9 +28,9 @@ header {
 
 .logo {
     height: 80px;
-    /* margin-right: 10px grey; */
 }
 
+/* menù */
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -47,45 +47,53 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
     background-color: lightblue;
+    color: white;
     border-radius: 5px;
 }
 
-.img {
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
+/* container banner */
 
 .img.banner {
     height: 500px;
     background-image:url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
     margin-bottom: 20px;
     position: relative;
+    border-radius: 10px; 
 }
 
 .text-banner {
+    width: 50%;
+    height: 100px;
     position: absolute;
-    left: 80px;
-    bottom: 60px;
-    color: white;
+    left: 50px;
+    bottom: 70px;
+    color: white; 
 }
 
-h3 {
-    font-size: 40px;
+.text-banner h3 {
+    font-size: 30px;
     font-weight: normal;
 }
 
+/* main */
+
 main {
     width: 100%;
-    background-color: #0088ff; 
+    background-color:white; 
 }
 
 .top-main {
     height: 100px;
-    margin-bottom: 10px;
-    background-color: #abcfe7;
+    padding: 20px 0;
 }
 
+.top-main p {
+    color: #a4a4a4
+}
+
+/* col-content */
 .sb-left, .sb-right {
     width: 20%;
 }
@@ -95,14 +103,55 @@ main {
 }
 
 .col-content {
-    height: 500px;
-    background-color: #abcfe7;
-    padding: 20px;
     margin: 0px 10px 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 800;
+}
+
+.col-content h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.col-content p {
+    color: #a4a4a4;
+} 
+
+.img-content {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 10px;
+}
+.img-content.left {
+    background-image: url('../img/img-1.jpg');
+}
+
+.img-content.center {
+    background-image: url('../img/banner-2.jpg');
+    margin: 0 auto;
+}
+
+.img-content.right {
+    background-image: url('../img/img-3.jpg');
 }
 
 footer {
     height: 80px;
-    background-color: #8801fe;
+    background-color: white;
     margin-top: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+footer::after {
+    content:'\2665'; 
+    color: red;
+    padding: 5px;
+    font-weight: lighter;
 }
