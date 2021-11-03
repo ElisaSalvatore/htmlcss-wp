@@ -66,9 +66,9 @@ nav ul li a:hover {
     border-radius: 20px; 
 }
 
-.overlay-banner {
+.overlay {
     width: 100%;
-    height: 500px;
+    height: 100%;
     background: rgb(30 30 30 / 20%);
     border-radius: 20px;
 }
@@ -128,7 +128,7 @@ main {
     background-size: cover;
     background-position: center;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .img-content.left {
@@ -145,11 +145,6 @@ main {
     background-image: url('../img/img-3.jpg');
 }
     
-.overlay-content {
-    background: rgb(30 30 30 / 20%);
-    height: 200px;
-    border-radius: 20px;
-}
 footer {
     height: 80px;
     background-color: white;
